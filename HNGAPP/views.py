@@ -14,11 +14,9 @@ bio = "Hi,My name is Tolulope.I am an upcoming backend developer and i have a gr
 
 @api_view(["GET"])
 def get_Profile(request):
-    profile = Profile.objects.all().first()
+    profile = Profile.objects.all().last()
     app_url = ProfileSerializers(profile)
-    Profile.objects.create(slackUsername=slackUsername, age=age, bio=bio)
-    # serializer = ProfileSerializers(date=request.data)
-    # serializer.is_valid(raise_exception=True)
+    # Profile.objects.create(slackUsername=slackUsername, age=age, bio=bio)
     return Response(app_url.data, status=status.HTTP_200_OK)
 
 
