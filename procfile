@@ -1,1 +1,1 @@
-web:  gunicorn HNGPROJECT.wsgi
+web: gunicorn HNGPROJECT.wsgi
