@@ -9,7 +9,7 @@ from rest_framework import status
 
 slackUsername = "Lorpeh"
 age = 27
-bio = "Hi, My name is tolulope, i am an upcoming backend developer and i have a great interest in developing and building APIs"
+bio = "Hi, My name is Tolulope. I am an upcoming backend developer and i have a great interest in developing and building APIs"
 
 
 @api_view(["GET"])
