@@ -9,14 +9,14 @@ from rest_framework import status
 
 slackUsername = "Lorpeh"
 age = 27
-bio = "Hi,My name is Tolulope.I am an upcoming backend developer and i have a great interest in developing and building APIs"
+bio = "Hi, My name is Tolulope.I am an upcoming backend developer and i have a great interest in developing and building APIs"
 
 
 @api_view(["GET"])
 def get_Profile(request):
+    # Profile.objects.create(slackUsername=slackUsername, age=age, bio=bio)
     profile = Profile.objects.all().last()
     app_url = ProfileSerializers(profile)
-    # Profile.objects.create(slackUsername=slackUsername, age=age, bio=bio)
     return Response(app_url.data, status=status.HTTP_200_OK)
 
 
