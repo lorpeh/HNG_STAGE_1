@@ -6,7 +6,7 @@ class Profile(models.Model):
     Age =  models.IntegerField(null=True)
     Backend = models.BooleanField(null=True,  default= True)
     Bio = models.TextField(null = True)
-
+    
 
 
 # Create your models here.
