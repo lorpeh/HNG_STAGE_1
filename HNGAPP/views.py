@@ -7,9 +7,9 @@ from rest_framework.decorators import api_view
 from rest_framework import status
 
 
-user_name = "Tolulope Alade"
-Age = 27
-Bio = "I am an upcoming backend developer and i have a great interest in developing and building APIs"
+slackUsername = "Lorpeh"
+age = 27
+bio = "Hi,My name is Tolulope.I am an upcoming backend developer and i have a great interest in developing and building APIs"
 
 
 @api_view(["GET"])
